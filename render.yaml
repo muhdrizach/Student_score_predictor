@@ -5,3 +5,4 @@ services:
     buildCommand: ./.render/build.sh
     startCommand: python app.py
     plan: free
+    autoDeploy: true
