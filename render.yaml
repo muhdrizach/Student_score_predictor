@@ -2,8 +2,5 @@ services:
   - type: web
     name: exam-score-predictor
     env: python
-    python:
-      version: 3.9.13
-    buildCommand: pip install -r requirements.txt
+    buildCommand: .render/build.sh
     startCommand: python app.py
-    plan: free
