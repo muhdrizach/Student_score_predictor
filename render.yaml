@@ -4,7 +4,6 @@ services:
     env: python
     python:
       version: 3.9.13
-    buildCommand: ./.render/build.sh
+    buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     plan: free
-    autoDeploy: true
