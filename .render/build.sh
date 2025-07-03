@@ -1,4 +1,10 @@
-chmod +x .render/build.sh
-git add .render/build.sh
-git commit -m "Add .render/build.sh to force Python 3.9 on Render"
-git push
+#!/usr/bin/env bash
+
+echo "⚙️  Forcing Python 3.9.13 via pyenv..."
+pyenv install 3.9.13 -s
+pyenv global 3.9.13
+
+python --version
+pip install --upgrade pip
+pip install -r requirements.txt
+
