@@ -1,4 +1,4 @@
-#!/bin/bash
-# Ensure correct Python version
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+chmod +x .render/build.sh
+git add .render/build.sh
+git commit -m "Add .render/build.sh to force Python 3.9 on Render"
+git push
